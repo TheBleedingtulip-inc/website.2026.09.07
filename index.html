@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Bleeding Tulip</title>
+    <meta
+      name="description"
+      content="The Bleeding Tulip is a nonprofit community resource and empowerment organization."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fff9fc;
+        --card: #ffffff;
+        --text: #1f1b24;
+        --muted: #5a5364;
+        --accent: #9d2b6b;
+        --border: #ead9e6;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.55;
+      }
+      .container {
+        width: min(100%, 960px);
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      header {
+        text-align: center;
+        padding: 2rem 1rem 1rem;
+      }
+      .logo-placeholder {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto 1rem;
+        border: 2px dashed var(--border);
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: var(--muted);
+        background: var(--card);
+        font-size: 0.9rem;
+      }
+      h1,
+      h2 {
+        margin-top: 0;
+      }
+      .subtitle {
+        color: var(--muted);
+      }
+      section {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+      ul {
+        margin: 0.5rem 0 0;
+        padding-left: 1.25rem;
+      }
+      footer {
+        text-align: center;
+        color: var(--muted);
+        padding: 1.5rem 0 2rem;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 0.5rem;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        padding: 0.65rem 1rem;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo-placeholder">Logo Here</div>
+      <h1>The Bleeding Tulip</h1>
+      <p class="subtitle">
+        A nonprofit community resource and empowerment organization.
+      </p>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2>Our Mission</h2>
+        <p>
+          We help people move from isolation and crisis toward stability,
+          connection, independence, and opportunity through community support,
+          resource navigation, and practical services.
+        </p>
+      </section>
+
+      <section>
+        <h2>What We Do</h2>
+        <ul>
+          <li>Peer support circles and community connection</li>
+          <li>Resource navigation and local referrals</li>
+          <li>Digital access support (computers, internet, and phone charging)</li>
+          <li>Employment and education readiness support</li>
+          <li>Partnership-based outreach with local organizations</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Get Involved</h2>
+        <p>
+          We welcome volunteers, community partners, and supporters who want to
+          help build a stronger and more connected community.
+        </p>
+        <a class="cta" href="mailto:contact@example.org">Contact Us</a>
+      </section>
+    </main>
+
+    <footer class="container">
+      <p>&copy; <span id="year"></span> The Bleeding Tulip. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
